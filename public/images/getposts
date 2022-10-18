@@ -1,0 +1,31 @@
+import React, { useEffect, useState } from 'react';
+import useFetch from './helper';
+
+export const getPosts = () => {
+ const [data, setData] = useState();
+ useEffect(() => {
+   const getData = async () => {
+   const guides = useFetch('/wp-json/wp/v2/guides');
+   setData(guides);
+  };
+  getData();
+ }, []);
+
+ return data;
+};
+
+
+import { __ } from '@wordpress/i18n';
+import DynamicGuide from './../data'
+import { getPosts } from './getPosts';
+
+const WelcomeTourGuide = ( props ) => {
+  const post = getPosts();
+  console.log(post);
+  [...]
+}
+
+export default WelcomeTourGuide;
+
+
+posts.lenght > 0 && console.log(posts)
