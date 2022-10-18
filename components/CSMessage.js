@@ -30,8 +30,8 @@ const CSMessage = () => {
 
   return <>
 
-    <div className='z-20 dark:text-white text-slate-900  font-[oswald] leading-tight uppercase py-16 w-full 
-    flex flex-col justify-center text-center text-md overflow-hidden invisible'>A message from the Chief Servant</div>
+    <div className='z-20 dark:text-white text-slate-900  font-[oswald] leading-tight uppercase w-full 
+    flex flex-col justify-center text-center text-md overflow-hidden hidden '>A message from the Chief Servant</div>
 
     <div 
     onClick={() => { setShow(true)}}

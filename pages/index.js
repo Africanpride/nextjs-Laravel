@@ -29,9 +29,9 @@ export default function Home() {
   const topTitleCss = ctl(`mt-6 text-md  text-slate-500 dark:text-yellow-500 font-[montserrat] uppercase`)
   const innertextRender = parse(`Come let us worship the Lord boldly in the spirit of togetherness because we were created to worship and give Him pleasure. To those who have discovered and those who are discovering and also, those who are yet to discover this original purpose of life, We invite you with excitement to join hearts, hands and voices in giving glory and adoration to the Lord in one place. This is the one activity we will not stop doing in Heaven as well as during the millennial reign of Christ on earth. `);
 
-  const sectionCssBlock = ctl(` bg-slate-200 dark:bg-[#000000] md:py-16 rounded-neat m-5 font-[lato] block  min-h-[60vh] break-normal`)
+  const sectionCssBlock = ctl(` bg-slate-200 dark:bg-[#000000] md:py-16 rounded-neat m-2 md:m-5 font-[lato] block  min-h-[60vh] break-normal`)
   const miniTitleCss1 = ctl(`mt-8  text-[14px] text-slate-500 dark:text-yellow-400 uppercase font-[montserrat] break-normal`);
-  const sectionCss = ctl(`overflow-hidden flex flex-col gap-4 my-5 px-5  md:flex-row justify-center items-center h-auto  break-normal`);
+  const sectionCss = ctl(`overflow-hidden flex flex-col gap-4 my-5 px-2 md:px-5  md:flex-row justify-center items-center h-auto  break-normal`);
   const sectionCssHome = ctl(`flex flex-col  justify-center items-start text-antoncolor bg-yellow-500  `)
   const squareBoxes = ctl(`relative aspect-square box-border w-24 md:w-28 h-24 md:h-28 p-3 flex justify-center items-center break-normal`)
 
@@ -72,7 +72,7 @@ export default function Home() {
         </button>
       </div>
 
-      <div className='flex flex-col items-start justify-between md:flex-row md:items-center overflow-hidden px-10 relative text-clip w-full z-30'>
+      <div className='flex flex-col items-center justify-between md:flex-row md:items-center overflow-hidden px-8 relative text-clip w-full z-30'>
         <motion.div
           initial={{ translateX: -50, opacity: 0 }}
           animate={{ translateX: 0, opacity: 1 }}
@@ -83,7 +83,7 @@ export default function Home() {
             duration: 5
           }}
 
-          className='relative z-20 font-[anton] text-xl md:text-6xl uppercase text-white dark:text-white leading-tight'>
+          className='relative z-20 font-[anton] text-2xl md:text-6xl uppercase text-white dark:text-white leading-tight'>
           A Gathering of  Nations For 144 <br />Hours Non-Stop Praise & Worship
         </motion.div>
 
@@ -94,13 +94,13 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col md:flex-row items-center justify-between z-30 px-8">
-        <h5 className="text-xl font-bold leading-tight text-gray-100 dark:text-white">20th Anniversary Edition<br />@Accra, GH</h5>
+      <div className="w-full flex md:flex-row items-center md:items-start justify-start z-30 px-8">
+        <h5 className="text-xl font-bold leading-tight text-gray-100 dark:text-white text-left">20th Anniversary Edition<br />@Accra, GH</h5>
       </div>
     </section>
 <Twenty />
-    <section className='bg-lightcolor2 dark:bg-gray-900 md:pb-32 relative overflow-hidden'>
-      <div className='absolute hidden md:block right-0 h-64 w-64 ' >
+    <section className='bg-lightcolor2 dark:bg-gray-900 md:py-32 relative overflow-hidden'>
+      <div className='absolute hidden md:block right-0 h-72 w-72 top-0' >
         <Image
           src={`/images/section2.png`}
           alt={`CS Message`}
@@ -108,8 +108,9 @@ export default function Home() {
           className=''
         />
       </div>
-          {/* <Message /> */}
+
       <CSMessage />
+
     </section>
 
 
@@ -130,7 +131,7 @@ export default function Home() {
       <ImageBlockXL imgSrc={'/images/non-stop-logo.jpg'} innerText={parse('<div></div>')} />
     </section>
 
-    <section className="overflow-hidden px-5">
+    <section className="overflow-hidden  px-2 md:px-5 ">
       <Choir />
     </section>
 
