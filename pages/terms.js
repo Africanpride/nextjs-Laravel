@@ -3,7 +3,7 @@ import { parse } from 'html-react-parser';
 
 export default function TermsJs() {
     // const terms.js = parse('')
-    const feedbackCss = 'dark:bg-slate-800 bg-slate-200 text-slate-900 dark:text-slate-300 shadow md:px-10 py-5 md:py-16 px-5 mb-5 md:mb-16 my-5 md:my-16 mx-5 md:mx-16 rounded-neat relative overflow-hidden'
+    const feedbackCss = 'dark:bg-slate-800 bg-slate-200 text-slate-900 dark:text-slate-300 shadow md:px-10 py-5 md:py-16 px-5 mb-5 md:mb-16 my-5 md:my-16 mx-2 md:mx-5 md:mx-16 rounded-neat relative overflow-hidden'
 const titles = 'mt-4 text-2xl sm:text-3xl text-slate-900 font-extrabold tracking-tight dark:text-slate-50 '
   return (
     <>

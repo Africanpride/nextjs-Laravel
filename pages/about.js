@@ -26,10 +26,10 @@ useEffect(() => {
 
 
 
-  const sectionCssBlock = ctl(` bg-slate-200 dark:bg-[#000000] md:py-16 rounded-neat m-5 font-[lato] block  min-h-[60vh]`)
-  const sectionCssBlockWithImage = ctl(`flex justify-center items-center flex-col rounded-neat relative bg-yellow-500 dark:bg-yellow-800 md:py-16 rounded-neat m-5 font-[lato] block  min-h-[70vh]`)
+  const sectionCssBlock = ctl(` bg-slate-200 dark:bg-[#000000] md:py-16 rounded-neat m-2 md:m-5 font-[lato] block  min-h-[60vh]`)
+  const sectionCssBlockWithImage = ctl(`flex justify-center items-center flex-col rounded-neat relative bg-yellow-500 dark:bg-yellow-800 md:py-16 rounded-neat m-2 md:m-5 font-[lato] block  min-h-[70vh]`)
   const overlay = ctl(`absolute inset-0 bg-blue-600 opacity-25 z-10  rounded-neat	`)
-  const squareBoxes = ctl(`relative aspect-square box-border w-24 md:w-28 h-24 md:h-28 p-3 flex justify-center items-center`)
+  const squareBoxes = ctl(`relative aspect-square box-border w-24 md:w-28 h-24 md:h-28 p-2 flex justify-center items-center`)
   const topTitleCss = ctl(`mt-6 text-md  text-slate-500 dark:text-yellow-500 font-[montserrat] uppercase`)
   const miniTitle = parse(`For Participation  <span className='text-yellow-500 font-bold'>Information</span> And Other Matters.`)
 
@@ -57,7 +57,7 @@ useEffect(() => {
     <section className={sectionCssBlock}>
 
       <div className='flex flex-col md:flex-row gap-4 '>
-        <div className="text-left px-8 py-10 text-gray-900 dark:text-white md:flex-row w-full 
+        <div className="text-left px-5 py-10 text-gray-900 dark:text-white md:flex-row w-full 
         md:w-8/12"   style={{ transform: `translateY(-${offsetY * 0.001}px)` }}>
           <div className='aspect-square  h-20  w-20  relative '>
             <Image
@@ -128,7 +128,7 @@ dark:text-greyed' >
     <section className={sectionCssBlock}>
 
       <div className='flex flex-col md:flex-row gap-4 '>
-        <div className=" order-2 px-8 py-10 text-gray-900 dark:text-white md:flex-row w-full 
+        <div className=" order-2 px-5 py-10 text-gray-900 dark:text-white md:flex-row w-full 
         md:w-8/12">
           {/* <div className='aspect-square  h-16  w-16  relative '>
             <Image
@@ -185,7 +185,7 @@ dark:text-greyed'>
     <section className={sectionCssBlock}>
 
       <div className='flex flex-col md:flex-row gap-4 '>
-        <div className="text-left px-8 py-10 text-gray-900 dark:text-white md:flex-row w-full 
+        <div className="text-left px-5 py-10 text-gray-900 dark:text-white md:flex-row w-full 
         md:w-8/12">
           {/* <div className='aspect-square  h-16  w-16  relative '>
             <Image

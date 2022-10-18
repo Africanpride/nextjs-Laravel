@@ -14,9 +14,9 @@ import ImagineHeader from '../components/Imagine'
 
 const History = () => {
 
-    const sectionCssBlock = ctl(`bg-slate-200 dark:bg-[#000000] font-[lato] m-5 min-h-[60vh] md:py-16 rounded-neat`)
+    const sectionCssBlock = ctl(`bg-slate-200 dark:bg-[#000000] font-[lato] m-2 md:m-5 min-h-[60vh] md:py-16 rounded-neat`)
     const sectionCssBlockWithImage = ctl(`flex justify-center items-center flex-col rounded-neat relative 
-    bg-yellow-500 dark:bg-yellow-800 py-16 rounded-neat m-5 font-[lato] block  min-h-[70vh]`)
+    bg-yellow-500 dark:bg-yellow-800 py-16 rounded-neat m-2 md:m-5 font-[lato] block  min-h-[70vh]`)
     const overlay = ctl(`absolute inset-0 bg-blue-600 opacity-25 z-10  rounded-neat	`)
     const squareBoxes = ctl(`relative aspect-square box-border w-24 md:w-28 h-24 md:h-28 p-3 flex justify-center items-center`)
     const miniTitle = parse(`Thank you in  <span className='text-yellow-500 font-bold'>Advance</span> For Your Contributions.`)
