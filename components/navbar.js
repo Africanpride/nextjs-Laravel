@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from 'react'
 import { Header } from './header';
 import Link from 'next/link';
+import Image from 'next/image'
 import Logo from './logo';
 import Router, { useRouter } from 'next/router';
 import { counter } from '@fortawesome/fontawesome-svg-core';
-import { faBarChart, faPhone, faEnvelope, faMapLocation, faTimesCircle, faMoney } from "@fortawesome/free-solid-svg-icons";
+import { faBarChart,  faMoneyBillTransfer, faHandHoldingDollar } from "@fortawesome/free-solid-svg-icons";
 
 import useDarkMode from './darkMode';
 import ImagineHeader from './Imagine';
 import Live from './Live';
 import ctl from '@netlify/classnames-template-literals';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 
 const navElements = [
@@ -69,12 +72,22 @@ const normalMenu = ctl('cursor-pointer space-y-2 text-sm text-white hover:text-t
             <div className={`hidden md:flex`}>
               <Link href="/donate">
 
-                <a className="inline-flex items-center px-4 py-1 mr-3 text-white bg-teal-600 border border-teal-600 rounded hover:bg-transparent hover:text-teal-600 active:text-teal-500 focus:outline-none focus:ring">
+                <a className="inline-flex space-x-2 items-center px-4 py-1 mr-3 text-white bg-teal-600 border border-teal-600 rounded hover:bg-transparent hover:text-teal-600 active:text-teal-500 focus:outline-none focus:ring">
                   <span className="text-sm font-medium"> Donate </span>
-
-                  <svg className="w-4 h-4 ml-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <FontAwesomeIcon icon={faMoneyBillTransfer} className='w-5 h-5' />
+{/* 
+                  <svg className="w-5 h-5 ml-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
+                  </svg> */}
+                  {/* <div className='h-5 w-5 relative'>
+                  <Image 
+                  alt='Donate to The Non-Stop Series'
+                  src='/images/donate.png'
+                  layout='fill'
+                  objectFit='fit'
+                  className='object-cover object-center' 
+                  />
+                  </div> */}
                 </a>
 
               </Link>

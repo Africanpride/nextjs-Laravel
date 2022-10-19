@@ -39,21 +39,21 @@ const Feedback = () => {
                             <h1 className="font-[anton] leading-relaxed tracking-wider text-xl font-bold mb-3">Testimonies</h1>
                             <p className="leading-relaxed mb-3 line-clamp-3">Share your tesimonies with us with regards to what the Lord has done in your life through this experience. </p>
                             <div className="flex items-center flex-wrap ">
-                                <Link href='/'><a className="text-yellow-500 dark:text-yellow-500 inline-flex items-center md:mb-2 lg:mb-0">Click Here<svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg></a></Link>
+                                <Link href='mailto:info@thenonstop.org'><a className="text-yellow-500 dark:text-yellow-500 inline-flex items-center md:mb-2 lg:mb-0">Click Here<svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg></a></Link>
                             </div>
                         </div>
                         <div>
                             <h1 className="font-[anton] leading-relaxed tracking-wider text-xl font-bold mb-3">Suggestions</h1>
                             <p className="leading-relaxed mb-3 line-clamp-3">We welcome your Spirit led suggestions on the overall organisation of the next Non-Stop Worship experience.  </p>
                             <div className="flex items-center flex-wrap ">
-                                <Link href='/'><a className="text-yellow-500 dark:text-yellow-500 inline-flex items-center md:mb-2 lg:mb-0">Click Here<svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg></a></Link>
+                                <Link href='mailto:info@thenonstop.org'><a className="text-yellow-500 dark:text-yellow-500 inline-flex items-center md:mb-2 lg:mb-0">Click Here<svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg></a></Link>
                             </div>
                         </div>
                         <div>
                             <h1 className="font-[anton] leading-relaxed tracking-wider text-xl font-bold mb-3">Website Feedback</h1>
                             <p className="leading-relaxed mb-3 line-clamp-3">We shall be glad to know your thoughts on ways we can improve the overall web presence to better serve you.  </p>
                             <div className="flex items-center flex-wrap ">
-                                <Link href='/'><a className="text-yellow-500 dark:text-yellow-500 inline-flex items-center md:mb-2 lg:mb-0">Click Here<svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg></a></Link>
+                                <Link href='mailto:webmaster@thenonstop.org'><a className="text-yellow-500 dark:text-yellow-500 inline-flex items-center md:mb-2 lg:mb-0">Click Here<svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg></a></Link>
                             </div>
                         </div>
 
