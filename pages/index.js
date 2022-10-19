@@ -35,6 +35,23 @@ export default function Home() {
   const sectionCssHome = ctl(`flex flex-col  justify-center items-start text-antoncolor bg-yellow-500  `)
   const squareBoxes = ctl(`relative aspect-square box-border w-24 md:w-28 h-24 md:h-28 p-3 flex justify-center items-center break-normal`)
 
+
+
+  const mapLink = <Link href='https://www.google.com.gh/maps?q=logos+rhema+foundation+map&client=ubuntu&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiju6mI__jjAhWJHRQKHek_BtYQ_AUIEigC'><a className='cursor-pointer'> Click For Direction<br />To Location</a></Link>
+
+  const twitterLink = <Link href='https://twitter.com/thenonstopserie'><a className='cursor-pointer'> Follow us Live<br />On Twitter</a></Link>
+
+  const faceBookLink = <Link href='https://www.facebook.com/nonstopseries/'>
+    <a className='cursor-pointer'> Follow us Live<br />On FaceBook </a></Link>
+
+  const tiktokLink = <Link href='https://www.google.com.gh/maps?q=logos+rhema+foundation+map&client=ubuntu&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiju6mI__jjAhWJHRQKHek_BtYQ_AUIEigC'><a className='cursor-pointer'> Click For Direction<br />To Location</a></Link>
+
+
+  const youtubeLink = <Link href='https://www.youtube.com/channel/UCszsGdub8qkbJOz_rdx-5IA'>
+    <a className='cursor-pointer'>Follow us Live<br />On Youtube </a>
+  </Link>
+
+
   const gridImages = [
     { imgageSrc: 'mama_pat.jpg' },
     { imgageSrc: 'mama-t.jpg' },
@@ -98,7 +115,7 @@ export default function Home() {
         <h5 className="text-xl font-bold leading-tight text-gray-100 dark:text-white text-left">20th Anniversary Edition<br />@Accra, GH</h5>
       </div>
     </section>
-<Twenty />
+    <Twenty />
     <section className='bg-lightcolor2 dark:bg-gray-900 md:py-32 relative overflow-hidden'>
       <div className='absolute hidden md:block right-0 h-72 w-72 top-0' >
         <Image
@@ -190,7 +207,7 @@ export default function Home() {
 
         <div className="px-4 py-5 flex flex-col justify-between w-full ">
           <h3 className="text-4xl text-gray-800 dark:text-gray-100 font-bold font-[montserrat]">Subscribe to newsletter</h3>
-          <p className="text-xl text-gray-600 font-[lato]">We sent latest news and posts once in every week, fresh from the oven</p>
+          <p className="text-xl text-gray-600 font-[lato]">We send latest news and posts often, fresh from the oven</p>
 
           <form action="https://thenonstop.us18.list-manage.com/subscribe/post?u=058b79e054f45463cc9ca30d3&id=0a0d474e40&f_id=005918e7f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" noValidate className="validate flex flex-col my-6 space-y-4 md:pr-4 w-full">
 
@@ -219,24 +236,32 @@ export default function Home() {
     </motion.section>
 
     <motion.section
-       initial={{ opacity:0 }}
-       whileInView={{opacity:1 }}
-       // transition={{ staggerChildren: 0.5,
-       //     delay: i * 0.5 }}
-           transition={{
-               ease: [0, 0.3,0.5,1],
-               staggerChildren: 1,
-               duration: 3,
-               delay: 0.2
-             }} 
-             viewport={{ once: true }}
-             className={sectionCss}>
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      // transition={{ staggerChildren: 0.5,
+      //     delay: i * 0.5 }}
+      transition={{
+        ease: [0, 0.3, 0.5, 1],
+        staggerChildren: 1,
+        duration: 3,
+        delay: 0.2
+      }}
+      viewport={{ once: true }}
+      className={sectionCss}>
 
       <ImageBlock imgSrc='/images/john.jpg' />
-      <BlockOne><BlockCardInner title={'Youtube'} fonts={'font-bold'} innerText={parse('Follow us Live <br /> on Youtube')} displayBottom={true} icon={faYoutubeSquare} /></BlockOne>
+
+      <BlockOne>
+        <BlockCardInner
+          title={'Youtube'}
+          fonts={'font-bold'}
+          innerText={youtubeLink}
+          displayBottom={true} icon={faYoutubeSquare} />
+      </BlockOne>
+
       <ImageBlock imgSrc='/images/24hours.jpg' />
-      <BlockOne><BlockCardInner fonts={'font-bold'} title={'facebook'} innerText={parse('Follow us Live <br /> on Facebook')} icon={faFacebookF} displayBottom={true} /></BlockOne>
-      <BlockOne><BlockCardInner title={'Twitter'} fonts={'font-bold'} innerText={parse('Follow us Live <br /> on Twitter. ')} icon={faTwitter} numbers={'6 K'} displayBottom={true} /></BlockOne>
+      <BlockOne><BlockCardInner fonts={'font-bold'} title={'facebook'} innerText={faceBookLink} icon={faFacebookF} displayBottom={true} /></BlockOne>
+      <BlockOne><BlockCardInner title={'Twitter'} fonts={'font-bold'} innerText={twitterLink} icon={faTwitter} numbers={'6 K'} displayBottom={true} /></BlockOne>
       {/* <ImageBlock imgSrc='/images/footerblock.jpg' /> */}
       <Weather />
 
